@@ -66,9 +66,8 @@ class AgenteIA(Agente):
 
     def pensar(self, ambiente):
         '''
-        Este é o "program(percepts)".
-        Recebe o ambiente (percepts) e retorna a ação (linha, coluna).
-        '''
+        Recebe o ambiente e retorna a ação (linha, coluna).
+        ''' 
         casas_vazias = ambiente.obter_casas_vazias()
 
         # REGRA 1: Tentar Ganhar
@@ -109,7 +108,7 @@ def main():
 
     jogador_atual = humano # Começa com o humano
 
-    print("=== JOGO DA VELHA: POO EDITION ===")
+    print("=== JOGO DA VELHA: ===")
 
     while True:
         ambiente.desenhar()
